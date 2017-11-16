@@ -1,0 +1,20 @@
+<div class='panel panel-primary' *ngIf='product'>
+  <div class='panel-heading'>
+      {{pageTitle + ': ' + product?.productName}}
+      
+        <ul>productId: {{product?.productId}}</ul>
+        <ul>productName: {{product?.productName}}</ul>
+        <ul>productCode: {{product?.productCode}}</ul>
+        <ul>releaseDate: {{product?.releaseDate}}</ul>
+        <ul>description: {{product?.description}}</ul>
+        <ul>price: {{product?.price}}</ul>
+        <ul>starRating: {{product?.starRating}}</ul>
+        <ul>imageUrl: {{product?.imageUrl}}</ul>
+        
+  </div>
+  <div class='panel-footer'>
+    <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+      <i class='glyphicon glyphicon-chevron-left'></i> Back 
+    </a>
+  </div>
+</div>
